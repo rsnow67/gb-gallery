@@ -1,0 +1,25 @@
+{
+  "name": "gb-gallery",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000g\u0000b\u0000-\u0000g\u0000a\u0000l\u0000l\u0000e\u0000r\u0000y\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode=production --progress",
+    "dev": "webpack --mode=development --progress"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rsnow67/gb-gallery.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rsnow67/gb-gallery/issues"
+  },
+  "homepage": "https://github.com/rsnow67/gb-gallery#readme",
+  "devDependencies": {
+    "webpack": "^5.69.1",
+    "webpack-cli": "^4.9.2"
+  }
+}
