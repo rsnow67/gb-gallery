@@ -1,0 +1,11 @@
+@mixin font($size: 14px, $height: 17px, $weight: 400, $style:normal) {
+	font-size: $size;
+	line-height: $height;
+	font-weight: $weight;
+	font-style: $style;
+}
+
+@mixin flex-space-between {
+	display: flex;
+	justify-content: space-between;
+}

@@ -1,0 +1,12 @@
+.header {
+	&__wrapper {
+		min-height: 75px;
+		@include flex-space-between;
+		align-items: center;
+	}
+
+	&__title {
+		@include font(30px, 34px, 900);
+		color: red;
+	}
+}
