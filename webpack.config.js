@@ -30,6 +30,20 @@ module.exports = {
 					'css-loader',
 					'sass-loader'
 				]
+			},
+			{
+				test: /\.(png|jpe?g|gif|mp3)$/i,
+				loader: 'file-loader',
+				options: {
+					name: '[path][name].[ext]'
+				}
+			},
+			{
+				test: /\.(woff(2)?|ttf|eot|)?$/i,
+				loader: 'file-loader',
+				options: {
+					name: '[path][name].[ext]'
+				}
 			}
 		]
 	},
