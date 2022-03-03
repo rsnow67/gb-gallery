@@ -1,0 +1,10 @@
+.gallery-card {
+	width: 426px;
+	border: 1px solid $border-color;
+
+	&__title {
+		padding: 7px 0;
+		min-height: 25px;
+		@include flex-x-y-center;
+	}
+}

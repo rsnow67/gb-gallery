@@ -3,8 +3,8 @@ import img2 from '../media/img/2.jpg';
 import img3 from '../media/img/3.jpg';
 import img4 from '../media/img/4.gif';
 
-const width = 460;
-const height = 320;
+const width = 426;
+const height = 240;
 
 export const items = [{
 		id: 1,

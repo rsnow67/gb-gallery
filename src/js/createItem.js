@@ -3,11 +3,6 @@ export const createItem = (item) => {
 	itemElem.classList.add('gallery__item');
 	itemElem.classList.add('gallery-card');
 
-	const title = document.createElement('h3');
-	title.classList.add('gallery-card__title');
-	title.textContent = item.name;
-	itemElem.appendChild(title);
-
 	const img = document.createElement('img');
 	img.classList.add('gallery-card__image');
 	img.setAttribute('src', item.image);
@@ -15,6 +10,11 @@ export const createItem = (item) => {
 	img.setAttribute('width', item.width);
 	img.setAttribute('height', item.height);
 	itemElem.appendChild(img);
+
+	const title = document.createElement('h3');
+	title.classList.add('gallery-card__title');
+	title.textContent = item.name;
+	itemElem.appendChild(title);
 
 	return itemElem;
 }

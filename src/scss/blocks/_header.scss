@@ -1,4 +1,6 @@
 .header {
+	background-color: $header-bkg-color;
+
 	&__wrapper {
 		min-height: 75px;
 		@include flex-space-between;
