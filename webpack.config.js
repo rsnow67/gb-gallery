@@ -3,6 +3,8 @@ const {
 } = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+// const imageminGif = require('imagemin-gifsicle');
+// const imageminMozjpeg = require('imagemin-mozjpeg');
 
 module.exports = {
 	entry: './src/index.js',
@@ -32,11 +34,22 @@ module.exports = {
 				]
 			},
 			{
-				test: /\.(png|jpe?g|gif|mp3)$/i,
-				loader: 'file-loader',
-				options: {
-					name: '[path][name].[ext]'
-				}
+				test: /\.(png|jpe?g|gif)$/i,
+				use: [{
+					loader: 'img-optimize-loader',
+					options: {
+						name: '[path][name].[ext]',
+						compress: {
+							gifsicle: {
+								optimizationLevel: 3,
+							},
+							mozjpeg: {
+								progressive: true,
+								quality: 60,
+							},
+						}
+					}
+				}]
 			},
 			{
 				test: /\.(woff(2)?|ttf|eot|)?$/i,
