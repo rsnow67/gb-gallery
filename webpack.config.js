@@ -50,7 +50,7 @@ module.exports = {
 				}]
 			},
 			{
-				test: /\.mp3$/i,
+				test: /\.(mp[3|4])$/i,
 				loader: 'file-loader',
 				options: {
 					name: '[path][name].[ext]'
@@ -67,7 +67,7 @@ module.exports = {
 	},
 	plugins: [
 		new HtmlWebpackPlugin({
-			template: resolve(__dirname, 'index.html')
+			template: resolve(__dirname, './src/tpl/index.html')
 		}),
 		new MiniCssExtractPlugin({
 			filename: '[name].[contenthash].css'

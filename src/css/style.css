@@ -132,12 +132,144 @@ table {
   border-spacing: 0;
 }
 
+body {
+  font-family: "lato", sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .container {
-  width: 1200px;
+  width: 1320px;
   margin: 0 auto;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+@media (max-width: 1320px) {
+  .container {
+    width: 95.8%;
+    /* 736px */
+  }
+}
+
+@media (max-width: 873px) {
+  .container {
+    width: 91.5%;
+    /* 343px */
+  }
+}
+
+@font-face {
+  font-family: "lato";
+  src: url(../fonts/lato-black.woff) format("woff"), url(../fonts/lato-black.woff) format("woff2");
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "lato";
+  src: url(../fonts/lato-bold.woff) format("woff"), url(../fonts/lato-bold.woff2) format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "lato";
+  src: url(../fonts/lato-regular.woff) format("woff"), url(../fonts/lato-regular.woff2) format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "lato";
+  src: url(../fonts/lato-italic.woff) format("woff"), url(../fonts/lato-italic.woff2) format("woff2");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "lato";
+  src: url(../fonts/lato-light.woff) format("woff"), url(../fonts/lato-light.woff2) format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+.header {
+  background-color: #F8F3F4;
+}
+
+.header__wrapper {
+  min-height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .header__title {
-  color: red;
+  font-size: 30px;
+  line-height: 34px;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.gallery {
+  padding: 50px 0;
+}
+
+.gallery__list {
+  display: grid;
+  grid-template-columns: repeat(3, 426px);
+  grid-gap: 21px;
+}
+
+@media (max-width: 1320px) {
+  .gallery__list {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 426px);
+    grid-gap: 21px;
+  }
+}
+
+@media (max-width: 873px) {
+  .gallery__list {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(1, 426px);
+    grid-gap: 0;
+  }
+}
+
+.gallery-card {
+  width: 426px;
+  min-height: 286px;
+  border: 1px solid #EAEAEA;
+}
+
+.gallery-card__inner {
+  width: 426px;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #F1F3F4;
+}
+
+.gallery-card__title {
+  padding: 7px 0;
+  min-height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /*# sourceMappingURL=style.css.map */
