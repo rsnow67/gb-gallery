@@ -1,0 +1,31 @@
+.gallery {
+	padding: 50px 0;
+
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(3, 426px);
+		grid-gap: 21px;
+	}
+}
+
+@media (max-width: $max-tablet-width) {
+	.gallery {
+		&__list {
+			display: grid;
+			justify-content: center;
+			grid-template-columns: repeat(2, 426px);
+			grid-gap: 21px;
+		}
+	}
+}
+
+@media (max-width: $max-mobile-width) {
+	.gallery {
+		&__list {
+			display: grid;
+			justify-content: center;
+			grid-template-columns: repeat(1, 426px);
+			grid-gap: 0;
+		}
+	}
+}

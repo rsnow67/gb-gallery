@@ -3,5 +3,6 @@
 # dependencies
 /node_modules
 /.idea
+/src/media/video
 
 npm-debug.log*

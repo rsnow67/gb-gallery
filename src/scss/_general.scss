@@ -1,0 +1,37 @@
+body {
+	font-family: "lato", sans-serif;
+	font-size: 14px;
+	line-height: 17px;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.container {
+	width: 1320px;
+	margin: 0 auto;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+	border: 0;
+	clip: rect(0 0 0 0)
+}
+
+@media (max-width: $max-tablet-width) {
+	.container {
+		width: 95.8%;
+		/* 736px */
+	}
+}
+
+@media (max-width: $max-mobile-width) {
+	.container {
+		width: 91.5%;
+		/* 343px */
+	}
+}
